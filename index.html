@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Amazon+Ember&display=swap" rel="stylesheet">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Mini</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* HEADER STYLING */
+    header {
+      background-color: #232F3E;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+    }
+
+    .search-bar {
+      flex: 1;
+      margin: 10px;
+      max-width: 500px;
+      display: flex;
+    }
+
+    .search-bar input {
+      flex: 1;
+      padding: 8px;
+      border: none;
+      border-radius: 4px 0 0 4px;
+    }
+
+    .search-bar button {
+      padding: 8px 16px;
+      border: none;
+      background-color: #febd69;
+      color: black;
+      font-weight: bold;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+
+    .header-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .header-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /* FOOTER STYLING */
+    footer {
+      background-color: #131a22;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .search-bar {
+        width: 100%;
+      }
+
+      .header-links {
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <a href="#" class="logo">Amazon Mini</a>
+      
+      <div class="search-bar">
+        <input type="text" placeholder="Search products..." />
+        <button>Search</button>
+      </div>
+      
+      <div class="header-links">
+        <a href="#">Sign In</a>
+        <a href="#">Orders</a>
+        <a href="#">Cart 🛒</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <main style="padding: 20px;">
+    <h1>Welcome to the Amazon Mini</h1>
+  </main>
+  <main style="padding: 20px;">
+  <h2 style="margin-bottom: 20px;">Amazon's Choice</h2>
+  <div class="product-grid">
+    
+
+    <!-- Sample: Product Cards 1–4 shown below (remaining continue the same pattern) -->
+    <div class="product-card">
+        <img src="FILE.PNG"HD Webcam" />
+        <h3>COSRX Snail Mucin 96% Power Repairing Essence 100ml, Hydrating Serum for Face with Snail Secretion Filtrate for Dull Skin & Fine Lines, Korean Skincare
+</h3>
+        <p class="price">$19.50</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="FILE2.PNG" alt="HD Webcam" />
+        <h3>PEDIGREE DentaStix Large Dental Dog Treats Daily Oral Care 56 Sticks Value Pack
+</h3>
+        <p class="price">$29.74</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="FILE3.PNG" alt="HD Webcam" />
+        <h3>Breeders Choice 99 percent Recycled Paper Cat Litter 15 Litre
+</h3>
+        <p class="price">$20.66</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="FILE 4.png" alt="HD Webcam" />
+        <h3>DINE Mixed Multipack Wet Cat Food, Salmon, Saucy Morsels with Tuna, 85 g (Pack of 28)
+</h3>
+        <p class="price">$18.47</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="FILE 5.png" alt="HD Webcam" />
+        <h3>POOWEE! Clumping Lavender Cat & Kitten Litter, 7.5kg - Long Lasting Clumping and Scoopable Litter, Odour Neutraliser, Easy to Clean The Litter Tray, Australian Owned, Mild Lavender Scent
+</h3>
+        <p class="price">$18.99</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="FILE 7.png" alt="HD Webcam" />
+        <h3>BISSELL 99K5E 2x Concentrated Formula for Upright Carpet Cleaners, Pet Stain & Odour, 750ml
+</h3>
+        <p class="price">$22.00</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+1" alt="HD Webcam" />
+        <h3>HD Webcam</h3>
+        <p class="price">$57.14</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+2" alt="Power Strip" />
+        <h3>Power Strip</h3>
+        <p class="price">$81.44</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+3" alt="LED Monitor" />
+        <h3>LED Monitor</h3>
+        <p class="price">$149.62</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150x140.png?text=Item+4" alt="Ergonomic Chair" />
+        <h3>Ergonomic Chair</h3>
+        <p class="price">$72.81</p>
+        <button>Add to Cart</button>
+             <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="main.py" class="py">
+    </div>
+
+    <!-- ...continue to item 100 -->
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p><a href="#" style="color: #fff; text-decoration: underline;">Back to top</a></p>
+    <p>Conditions of Use | Privacy Notice | Help</p>
+    <p>© 2025, Amazon Mini, Inc. or its affiliates</p>
+    
+  </footer>
+
+</body>
+</html>
+
+
